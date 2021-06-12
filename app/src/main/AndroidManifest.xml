@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trek">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trek">
+        <activity android:name=".activities.Scheduler"></activity>
+        <activity android:name=".activities.WeatherActivity" />
+        <activity android:name=".activities.ScheduleActivity" />
+        <activity android:name=".activities.TranslateActivity" />
+        <activity android:name=".activities.ExchangeActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.here.sdk.access_key_id"
+            android:value="smzZ6x35JmlptKs46mldLw" />
+        <meta-data
+            android:name="com.here.sdk.access_key_secret"
+            android:value="OgS0nLSIRbVAujlfjYiQr1q_PHOURirbsTFAPOM0vrP_uUMIJ3tSC5276p4Fr_N76Km61YS3rJTD8hiE6JM0Zw" />
+
+        <activity android:name=".activities.HereMapActivity" />
+        <activity
+            android:name=".activities.MapActivity"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".activities.ViewLocation" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity
+            android:name=".activities.AuthenticationActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

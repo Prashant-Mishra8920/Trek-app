@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:background="@color/DefaultBackground">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/DefaultRadius"
+        android:translationZ="5dp"
+        android:outlineSpotShadowColor="@color/otherGrey"
+        android:layout_margin="@dimen/DefaultMargin"
+        tools:targetApi="p">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:theme="@style/EditText">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up for free"
+                android:gravity="center"
+                android:layout_margin="@dimen/DefaultMargin"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/DefaultMargin"
+                app:cardCornerRadius="@dimen/DefaultRadius"
+                android:backgroundTint="@color/customBlue"
+                android:outlineSpotShadowColor="@color/customBlue"
+                android:outlineAmbientShadowColor="@color/customBlue"
+                app:cardUseCompatPadding="true"
+                android:translationZ="3dp">
+                <LinearLayout
+                    android:id="@+id/googleSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/DefaultPaddingShort"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_icon"
+                        android:background="@drawable/round_background"
+                        android:padding="@dimen/DefaultPaddingShort" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sign up with Google"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---  or sign up with mobile  ---"
+                android:gravity="center"
+                android:layout_margin="@dimen/DefaultVerticalMargin"
+                android:textColor="@color/otherGrey"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                app:startIconDrawable="@drawable/person_icon"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="@dimen/DefaultMargin">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:layout_marginVertical="@dimen/DefaultMargin"
+                app:startIconDrawable="@drawable/phone_icon">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                app:cornerRadius="@dimen/DefaultRadius"
+                android:padding="@dimen/DefaultPadding"
+                android:backgroundTint="@color/red"/>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_margin="@dimen/DefaultMargin">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Already have an account? "/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/loginSwitch"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="login"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:background="?android:attr/selectableItemBackground"/>-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

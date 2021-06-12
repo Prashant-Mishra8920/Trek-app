@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "79733116570",
+    "project_id": "trek-46f15",
+    "storage_bucket": "trek-46f15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79733116570:android:096387e7ce3d3add499923",
+        "android_client_info": {
+          "package_name": "com.example.trek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79733116570-ko5dh89cpi2a7bivhn4ktr4k0a3hnbg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trek",
+            "certificate_hash": "a42f4b3bb94c5985b7ec65513baa324a484ac842"
+          }
+        },
+        {
+          "client_id": "79733116570-djiqc7k82moo6nusm55bru2dk51ouhpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk1D-GkvfXDKoPd-l8to5EGrz3vLauSCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79733116570-djiqc7k82moo6nusm55bru2dk51ouhpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

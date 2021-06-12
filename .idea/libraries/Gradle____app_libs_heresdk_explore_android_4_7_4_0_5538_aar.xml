@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/heresdk-explore-android-4.7.4.0.5538.aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/324a3a1296fcb2fe0e9847b43f19cbd4/heresdk-explore-android-4.7.4.0.5538/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/193fe439a2f137adc9463b7210d86cf1/heresdk-explore-android-4.7.4.0.5538/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/193fe439a2f137adc9463b7210d86cf1/heresdk-explore-android-4.7.4.0.5538/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/193fe439a2f137adc9463b7210d86cf1/heresdk-explore-android-4.7.4.0.5538/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
